@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="js/sketch.js" defer></script>
+  <script src="js/p5.min.js" async></script>
+  <link rel="stylesheet" href="https://use.typekit.net/sbj1jpm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Portfolio Anastasiia Balagurova</title>
+</head>
+
+<body>
+
+
+  <div class="top">
+    <div class="item-1">
+      <a href="index.html">Anastasiia Balagurova</a>
+    </div>
+    <div class="item-3"><a href="index.html">Selected works</a></div>
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+    <div class="item-6"></div>
+    <div class="item-7"><a style = "text-decoration: line-through;" href="#">archive</a></div>
+    <div class="item-8"><a href="#" style = "text-decoration: line-through;">CV</a></div>
+  </div>
+  
+  <div class="bottom">
+    <div class="item-1">
+      <a href="playground.html">p5.js playground</a>
+    </div>
+    <div class="item-3"></div>
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+    <div class="item-6"></div>
+    <div class="item-7"></div>
+    <div class="item-8">
+      <a href="contact.html">contact</a>
+  </div>
+  </div>
+
+  <div class="container" id="container">
+    <div class="grid-item-1"> </div>
+    <div class="grid grid-item-2 grey" id="grid-item-2">
+      <div class="item-icon">▬</div>
+      <div class="item-title">
+        <a class="grey" href="game-of-words.html">GAME OF WORDS</a>
+
+      </div>
+      <div class="item-text">
+        <a class="grey" href="game-of-words.html">a visual essay about misinformation in Russian news</a>
+      </div>
+    </div>
+    <div class="grid grid-item-3 grey" id="grid-item-3">
+      <div class="item-icon">▬</div>
+      <div class="item-title">
+        <a class="grey" href="donorsearch.html">How to become a donor</a>
+      </div>
+      <div class="grid item-text">
+        <a class="grey" href="donorsearch.html">a visual explainer about <br>blood donation</a>
+      </div>
+    </div>
+    <div class="grid grid-item-4 grey" id="grid-item-4">
+      <div class="item-icon">▬</div>
+      <div class="item-title">
+        <a class="grey" href="digest.html">Avito digest</a>
+      </div>
+      <div class="item-text">
+        <a class="grey" href="digest.html">a corporate digest <br>with multi-format news</a>
+      </div>
+    </div>
+    <div class=" grid-item-5 grey"> </div>
+    <div class="grid grid-item-6 grey" id="grid-item-6">
+      <div class="item-icon">▬</div>
+      <div class="item-title">
+        <a class="grey" href="happiness.html">happiness index</a>
+      </div>
+      <div class="item-text">
+        <a class="grey" href="happiness.html">an interactive data visualization explaining happiness index</a>
+      </div>
+    </div>
+    <div class="grid grid-item-7 grey" id="grid-item-7">
+      <div class="item-icon">▬</div>
+      <div class="item-title">
+        <a class="grey" href="enemies-list.html">Enemies list</a>
+      </div>
+      <div class="item-text">
+        <a class="grey" href="enemies-list.html">a visual essay about political prisoners in Russia</a>
+      </div>
+    </div>
+    <div class="grid grid-item-8 " id="grid-item-8">
+      <div class="item-icon">▬</div>
+      <div class="item-title">
+        <a href="customers.html">Customers Experience Research</a>
+      </div>
+      <div class="item-text">
+        <a href="customers.html">a visual storytelling about customer experience research</a>
+      </div>
+    </div>
+  </div>
+  <div class="about-container">
+    <div class="area-1">
+      <div class="about-titles">
+        <p>http</p>
+        <p>with</p>
+        <p>during</p>
+        <p>role</p>
+      </div>
+      <div class="about-text">
+        <p><a href="https://digital.infografika.agency/vtb/clientexp/" target="blank">digital.infografika.agency/vtb/clientexp</a></p>
+        <p>Infografika agency</p>
+        <p>Nov–Dec 2021</p>
+        <p>designer</p>
+      </div>
+    </div>
+    <div class="area-2">
+      <img class="project-images" src="img/customers.png" alt="project images">
+      <a id="top" href="javascript:topFunction();">scroll to top</a>
+    </div>
+  </div>
+
+
+
+<script>
+  //Get the button:
+mybutton = document.getElementById("top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+
+</html>
