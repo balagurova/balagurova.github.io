@@ -1,3 +1,10 @@
+$("document").ready (function() {
+    $(".toggle").click(function() {
+      $( ".menu" ).stop().toggle();
+    });
+    
+  });
+  
 let canvasDiv = document.getElementById('canvasContainer');
 let divWidth = canvasDiv.offsetWidth;
 let divHeight = canvasDiv.offsetHeight;
