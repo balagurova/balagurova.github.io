@@ -148,7 +148,7 @@ text-transform: uppercase;
   gap: 0 1.1rem;
   grid-auto-flow: row;
   grid-template-areas:
-    "item-1 item-1 item-3 item-4 item-5 item-6 item-7 item-8";
+    "item-1 item-1 item-3 item-3 item-5 item-6 item-7 item-8";
 }
 
 .item-1 { grid-area: item-1;
@@ -156,7 +156,7 @@ display: flex;
 flex-direction: column;
 justify-content:space-between; }
 
-.item-3 { grid-area: item-3; }
+.item-3 { grid-area: item-3;}
 
 .item-4 { grid-area: item-4; }
 
@@ -179,6 +179,46 @@ text-align: right; }
   }
 
 
+  /* containter CV  */
+
+  .container-cv {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    width: 100vw;
+  padding: 5rem 3.05rem;
+    gap: 3rem 1.1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . item1 item1 item1 . . ."
+      ". . item2 item2 item3 item3 item4 item4"
+      ". . item5 item5 item6 item6 item7 item7";
+  }
+  
+  .item2 { grid-area: item2; }
+  
+  .item3 { grid-area: item3; }
+  
+  .item4 { grid-area: item4; }
+  
+  .item5 { grid-area: item5; }
+  
+  .item6 { grid-area: item6; }
+  
+  .item7 { grid-area: item7; }
+  
+  .item1 { grid-area: item1;}
+  
+    
+
+  
+.cv-title{
+  margin-bottom: 1rem;
+}
+
+.cv-group{
+  margin-bottom: 1.5rem;
+}
+  
 
 .grey {
   color: lightgray!important;
