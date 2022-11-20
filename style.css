@@ -76,7 +76,7 @@ body {
   padding: 7rem 3.05rem;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1.4rem 1.1rem;
+  gap: 2rem 0rem;
   grid-auto-flow: row;
   grid-template-areas:
     "grid-item-1 grid-item-1 grid-item-2 grid-item-2 grid-item-3 grid-item-3 grid-item-4 grid-item-4"
@@ -84,8 +84,6 @@ body {
 }
 
 .grid-item-1 { grid-area: grid-item-1; }
-
-
 
 .grid-item-2 { grid-area: grid-item-2; }
 
@@ -186,7 +184,7 @@ text-align: right; }
     /* grid-template-rows: 1fr 1fr 1fr; */
     width: 100vw;
   padding: 5rem 3.05rem;
-    gap: 3rem 1.1rem;
+    gap: 2rem 0rem;
     grid-auto-flow: row;
     grid-template-areas:
       ". . item1 item1 item1 . . ."
